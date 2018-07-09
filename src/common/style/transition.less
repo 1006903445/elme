@@ -1,0 +1,38 @@
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s ease-out;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.move-enter-active, .move-leave-active {
+    transition: all 0.3s linear;
+}
+.move-enter, .move-leave-to {
+    opacity: 0;
+    transform: translate3d(24px, 0, 0);
+}
+
+.move-in-out-enter-active, .move-in-out-leave-active {
+    transition: all 0.3s linear;
+}
+.move-in-out-enter, .move-in-out-leave-to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+}
+
+.rotate-enter-active, .rotate-leave-active {
+    transition: all 0.3s linear;
+
+}
+.rotate-enter, .rotate-leave-to {
+    opacity: 0;
+    transform: rotate(180deg);
+}
+
+.fold-enter-active, .fold-leave-active {
+    transition: all 0.3s;
+}
+.fold-enter, .fold-leave-to {
+    transform: translate3d(0, 100%, 0);
+}
